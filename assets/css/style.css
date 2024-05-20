@@ -3,11 +3,35 @@
     padding: 0%;
 }
 
+.search-list{
+    grid-area: search-list;
+    display: flex;
+    background-color: blue;
+    padding: 5px 40px;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.rss{
+    justify-content: center;
+    background-color: darkblue;
+    color: white;
+}
+
+.card{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
 @media (width <= 576px){
     body{
         background-color: darkgoldenrod;
 
     }
+
     .main_container{
         display: grid;
         grid-template-columns: 1fr;
