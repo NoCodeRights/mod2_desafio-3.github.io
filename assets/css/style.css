@@ -19,6 +19,23 @@
     color: white;
 }
 
+.footer{
+    grid-area: footer;
+    justify-content: center;
+}
+
+.side-bar{
+    grid-area: side-bar;
+    flex-direction: column;
+}
+
+.products{
+    grid-area: products;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .card{
     width: 100%;
 }
@@ -26,6 +43,11 @@
 img{
     width: 100%;
 }
+
+.paginador{
+    justify-content: center;
+}
+
 @media (width <= 576px){
     body{
         background-color: darkgoldenrod;
@@ -44,5 +66,32 @@ img{
         .link-container{
             display: none;
         }
+        
+    }
+}
+
+@media (width > 576px){
+    body{
+        background-color: darkgoldenrod;
+
+    }
+
+    .main_container{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        'side-bar search-list'
+        'side-bar products'
+        'footer products';
+    }
+
+    .side-bar{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menu-hamburguesa{
+        display: none;
     }
 }
