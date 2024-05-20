@@ -12,6 +12,10 @@
     justify-content: center;
     color: aliceblue;
 }
+.link-container{
+    display: flex;
+    flex-direction: column;
+}
 
 .rss{
     justify-content: center;
@@ -21,10 +25,11 @@
 
 .footer{
     grid-area: footer;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .side-bar{
+    display: flex;
     grid-area: side-bar;
     flex-direction: column;
 }
@@ -84,6 +89,8 @@ img{
         'side-bar search-list'
         'side-bar products'
         'footer products';
+        min-height: 100vh;
+        
     }
 
     .side-bar{
