@@ -37,6 +37,7 @@
 .products{
     grid-area: products;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
 }
@@ -83,16 +84,23 @@ img{
 
     .main_container{
         display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 5fr;
         grid-template-areas:
         'side-bar search-list'
         'side-bar products'
         'footer products';
-        min-height: 100vh;
         
     }
-
+    .card{
+        width: 25%;
+        margin: 10px auto;
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .side-bar{
         flex-direction: column;
         justify-content: flex-start;
