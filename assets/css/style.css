@@ -40,5 +40,9 @@ img{
         'search-list'
         'products'
         'footer';
+        
+        .link-container{
+            display: none;
+        }
     }
 }
