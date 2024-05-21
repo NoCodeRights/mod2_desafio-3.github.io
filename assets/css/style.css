@@ -6,12 +6,14 @@
 .search-list{
     grid-area: search-list;
     display: flex;
+    flex-direction: column;
     background-color: blue;
     padding: 5px 40px;
     text-align: center;
     justify-content: center;
     color: aliceblue;
 }
+
 .link-container{
     display: flex;
     flex-direction: column;
@@ -32,6 +34,7 @@
     display: flex;
     grid-area: side-bar;
     flex-direction: column;
+    padding: 5px;
 }
 
 .products{
@@ -52,6 +55,7 @@ img{
 
 .paginador{
     justify-content: center;
+    text-align: center;
 }
 
 @media (width <= 576px){
@@ -74,6 +78,9 @@ img{
         }
         
     }
+    .menu-hamburguesa{
+        text-align: end;
+    }
 }
 
 @media (width > 576px){
@@ -91,16 +98,19 @@ img{
         'footer products';
         
     }
+
     .card{
-        width: 25%;
+        width: 23%;
         margin: 10px auto;
         padding: 2px;
         margin-bottom: 10px;
     }
+
     .card-container{
         display: flex;
         flex-wrap: wrap;
     }
+
     .side-bar{
         flex-direction: column;
         justify-content: flex-start;
@@ -109,4 +119,5 @@ img{
     .menu-hamburguesa{
         display: none;
     }
+
 }
